@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="223dp"
+        android:onClick="goster"
+        android:text="Göster"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtisvec"
+        app:layout_constraintTop_toBottomOf="@+id/txtisvec" />
+
+    <TextView
+        android:id="@+id/txtTurk"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="58dp"
+        android:text="TrkLirası"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCanada"
+        app:layout_constraintEnd_toEndOf="@+id/txtCanada"
+        app:layout_constraintStart_toStartOf="@+id/txtisvec"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCanada"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_marginStart="63dp"
+        android:text="Canada"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtisvec"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTurk" />
+
+    <TextView
+        android:id="@+id/txtisvec"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="53dp"
+        android:text="İsveç"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/txtCanada"
+        app:layout_constraintStart_toStartOf="@+id/txtCanada"
+        app:layout_constraintTop_toBottomOf="@+id/txtCanada" />
+</android.support.constraint.ConstraintLayout>
